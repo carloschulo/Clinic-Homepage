@@ -1,2 +1,2 @@
 # Clinic-Homepage
-Created a Homepage for a local clinic
+Creating a site for a local clinic. Visit the page at https://little-titans.firebaseapp.com/. 
