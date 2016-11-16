@@ -44,24 +44,29 @@ html, body {
 
 
 /* Responsive: Portrait tablets and up */
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 767px) {
   .container {
     max-width: 930px;
     margin-top: 60px;
     margin-bottom: 60px;
+  }
+   #handle{
+    display: none;
   }
 
 }
 
 @media screen and (max-width: 768px){
   nav {
-    /*display: none;*/
-    background: grey;
+      /*max-height: 0px;*/
     a {
       width: 100%;
       background: #FFB898;
       color: black;
-      /*padding: 5px;*/
+      text-decoration: none;
+    }
+    a:hover {
+      color: #81C1AE;
     }
   }
   .logo {
@@ -76,14 +81,18 @@ html, body {
   h3{
     font-size: .95em;
   }
+  #handle {
+    width: 100%;
+    background: #ff8a65;
+    color: white;
+    cursor: pointer;
+    height: 40px;
+    line-height: 300%;
+}
+ 
   
 }
-#handle {
-  display: none;
-  /*width: 100%;
-  background: black;
-  margin-left: 20px;*/
-}
+
 
 header {
   background: #81C1AE;
@@ -138,6 +147,7 @@ header {
       display: inline-block;
       color: white;
       padding: 20px;
+      text-decoration: none;
     }
     a:hover {
       color: #FFB898;
@@ -182,15 +192,20 @@ section {
     article {
         text-align: left;
         @include make-lg-column(4);
-        h3 {
-          /*text-align: left;*/
-        }
+        line-height: 1.8;
         
     }
 }    
 
 footer {
   width: 100%;
-  height: 70px;
+  height: auto;
   background: #87AAA6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  div {
+    padding: 10px;
+  }
 }
